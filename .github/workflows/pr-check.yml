@@ -22,6 +22,6 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install required dependencies
-        run: npm ci
+        run: npm install
       - name: Run the tests
         run: npm test
